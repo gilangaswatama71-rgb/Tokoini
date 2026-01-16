@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+<style>
+    #gambar1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-top: 1cm;
+        margin-left: 25%;
+        margin-right: 25%;
+
+    }
+
+
+    #isine {
+        background-color: white;
+        width: 720px;
+        height: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 80px;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    #text1 {
+        text-align: center;
+        background-color: grey;
+        background-size: 20px;
+        padding: 10px;
+        justify-content: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        border-radius: 15px;
+
+    }
+
+    #mampir {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #content2 {
+        font-size: 1cm;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2cm;
+
+    }
+
+    .navbar {
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: grey;
+        padding: 10px 20px;
+        transition: 0.3s;
+    }
+
+    body {
+        background-color: rgb(196, 182, 182);
+
+    }
+
+    #tombol {
+        text-align: center;
+        margin: auto;
+        border: 3px solid;
+        margin-left: auto;
+        margin-right: auto;
+        margin-block-start: 1cm;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        max-width: 800px;
+
+
+    }
+
+    .font {
+        font-size: large;
+        border: 2px solid;
+        margin: 20px;
+        justify-content: center;
+        text-align: center;
+
+
+
+    }
+</style>
+
+<!-- content satu -->
+
+<body>
+    <div id="text1">
+        <h1>DILGITORA</h1>
+    </div>
+
+    <!-- gambar 1 -->
+    <div id="gambar1">
+        <div>
+            <img src="30-43.jpg" id="isine" />
+        </div>
+    </div>
+    <div id="mampir">
+        <h1>mampir guy </h1>
+    </div>
+
+    <!-- content 2 -->
+    <div id="content2">
+        <ul>
+            <a href="isi home,abot,contct/home.html" class="navbar">home</a>
+        </ul>
+        <ul>
+            <a href="isi home,abot,contct/contact.html" class="navbar">contact me</a>
+        </ul>
+        <ul>
+            <a href="isi home,abot,contct/about.html" class="navbar">about me</a>
+        </ul>
+    </div>
+
+    <div id="tombol">
+
+        <input placeholder="masukkan username" class="font" id="username" />
+        <input placeholder="masukkan password" class="font" id="password" />
+        <button onclick="login()" id="">LOGIN</button>
+
+    </div>
+
+    <!-- javascript -->
+    <script type="application/javascript">
+        let username = document.getElementById('username')
+        let password = document.getElementById('password')
+
+
+        function login() {
+            console.log('ada yang login')
+            console.log(username.value)
+            console.log(password.value)
+
+            if (username.value == "admin" && password.value == "admin12") {
+                alert('login sebagai admin')
+
+            }else {
+                alert('login user biasa')
+            }
+        }
+    </script>
+
+</body>
+
+</html>
